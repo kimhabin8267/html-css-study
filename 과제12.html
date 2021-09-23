@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학습과제12</title>
+
+    <style>
+        body{
+            width: 300px;
+            height: 800px;
+            border: solid 1px rgba(192, 192, 192, 0.521) ;
+        }
+
+        .BOX1{
+            position: absolute;
+            z-index: 1;
+            background-color: rgb(37, 168, 255);
+            width: 70px;
+            height: 70px;
+            font-size: 20px;
+        }
+
+        .BOX2{
+            position: absolute;            
+            z-index: 3;
+            background-color: rgb(37, 168, 255);
+            width: 70px;
+            height: 70px;
+            font-size: 20px;
+            left: 240px;
+        }
+
+        .STICKY{
+            z-index: 2;
+            position: sticky;
+            left: 79px;
+            top: 80px;
+            background-color: rgb(12, 0, 122);
+            width: 70px;
+            height: 70px;
+            color: #ffffff;
+        }
+
+        .BOX5{
+            position:relative;
+            top:120px;
+            left: 140px;
+            z-index: 4;
+            background-color: rgb(37, 168, 255);
+            width: 70px;
+            height: 70px;
+            font-size: 20px;
+        }
+
+        .FIXED{
+            z-index: 5;
+            position: Fixed;
+            top:305px;
+            left: 220px;
+            background-color: rgb(16, 148, 16);
+            width: 70px;
+            height: 70px;
+            font-size: 20px;
+        }
+
+        .BOX3{
+            position: absolute;
+            z-index: 1;
+            background-color: rgb(37, 168, 255);
+            width: 70px;
+            height: 70px;
+            left: 10px;
+            bottom: -2544px;
+            font-size: 20px;
+        }
+
+        .BOX4{
+            position: absolute;            
+            z-index: 1;
+            background-color: rgb(37, 168, 255);
+            width: 70px;
+            height: 70px;
+            left: 230px;
+            bottom: -2544px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="BOX1">
+        <p>BOX1</p>
+    </div>
+
+    <div class="BOX2">
+        <p>BOX2</p>
+    </div>
+
+    <div class="STICKY">
+        <p>STICKY</p>
+    </div>
+
+    <div class="BOX5">
+        <p>BOX5</p>
+    </div>
+
+    <div class="FIXED">
+        <p>FIXED</p>
+    </div>
+
+    <div class="BOX3">
+        <p>BOX3</p>
+    </div>
+
+    <div class="BOX4">
+        <p>BOX4</p>
+    </div>
+
+</body>
+
+</html>

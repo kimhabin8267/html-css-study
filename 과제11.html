@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학습과제11</title>
+    <style>
+        h1{
+            color: rgb(51, 159, 202);
+        }
+
+        hr {
+            width: 500px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>form 태그 사용법</h1>
+    <form name="formtag" action="#" method="GET">
+        <!-- 입력란 -->
+        <label for="text1">텍스트1:</label>
+        <input type="text" id=textbox1><br>
+        <label for="text2">텍스트2:</label>
+        <input type="text" id=textbox2 value="urimts"> <br>
+        <!-- 비밀번호 -->
+        <label for="pw1">비밀번호:</label>
+        <input type="password" id=pw1 value="pw1"><br>
+        <!-- 라디오 버튼 -->
+        <label for="radio1">라디오 버튼:</label>
+        <input type="radio" name="radio" id="Man">
+        <label for="Man">남성</label>
+        <input type="radio" name="radio" id="Woman">
+        <label for="Woman">여성</label>
+        <input type="radio" name="radio" id="Other" checked>
+        <label for="Man">비고</label><br>
+        <label for="Tester">사용자: </label>
+        <input type="text" id=textbox3><br>
+        <!-- 버튼 -->
+        <input type="submit" value="제출전송">
+        <input type="reset" value="초기화">
+    </form>
+
+    <br>
+    <hr>
+
+    <h1>로그인 폼</h1>
+    <form  name="formtag2" action="#" method="GET">
+        <!-- ID -->
+        <label for="login">ID:</label>
+        <input type="text" id=login value="urimts"><br>
+        <!-- PW -->
+        <label for="pw2">PW:</label>
+        <input type="password" id=pw2 value="pw2"><br>
+        <!-- 라디오버튼 -->
+        <label for="radio2">성별:</label>
+        <input type="radio" name="radio2" id="Man">
+        <label for="Man2">남성</label>
+        <input type="radio" name="radio2" id="Woman">
+        <label for="Woman2">여성</label><br>
+        <!-- 버튼 -->
+        <input type="submit" value="로그인">
+    </form>
+</body>
+
+</html>

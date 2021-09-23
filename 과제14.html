@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학습과제14</title>
+    <style>
+        body {
+            width: 450px;
+        }
+
+        .visible_text,
+        .hidden_text,
+        .scroll_text,
+        .auto_text {
+            float: left;
+            background-color: skyblue;
+            width: 10vw;
+            height: 14vh;
+            margin-bottom: 125px;
+        }
+
+        .visible_img,
+        .hidden_img,
+        .scroll_img,
+        .auto_img {
+            float: right;
+            background-color: skyblue;
+            width: 10vw;
+            height: 14vh;
+            margin-bottom: 130px;
+        }
+
+
+        .visible_text,
+        .visible_img {
+            overflow: visible;
+        }
+
+        .hidden_text,
+        .hidden_img {
+            overflow: hidden;
+        }
+
+        .hidden {
+            font-size: 17px;
+        }
+
+        .scroll_text,
+        .scroll_img {
+            overflow: scroll;
+        }
+
+        .auto_text,
+        .auto_img {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!--visible-->
+    <div class="visible_text">
+        <h3>overflow : <br> visible</h3>
+        <p> overflow 속성에서 visible 속성을 주면 넘어가게 됨 </p>
+    </div>
+    <div class="visible_img">
+        <h3>overflow : <br> visible</h3>
+        <img width="300px" height="130px" src="img/overflow.jpg">
+    </div>
+
+    <!--hidden-->
+    <div class="hidden_text">
+        <h3>overflow : <br> hidden</h3>
+        <p class="hidden">overflow 속성에서 hidden 속성을 주면 잘리게 됨</p>
+    </div>
+    <div class="hidden_img">
+        <h3>overflow : <br> hidden</h3>
+        <img src="img/overflow.jpg">
+    </div>
+
+    <!--scroll-->
+    <div class="scroll_text">
+        <h3>overflow : <br> scroll</h3>
+        <p>overflow 속성에서 scroll 속성을 주면 넘치는 컨텐츠는 잘리고 필요하던 하지않던 가로,세로 스크롤바가 생기게 됨</p>
+    </div>
+    <div class="scroll_img">
+        <h3>overflow : <br> scroll</h3>
+        <img src="img/overflow.jpg">
+    </div>
+
+    <!--auto-->
+    <div class="auto_text">
+        <h3>overflow : <br> auto</h3>
+        <p>overflow 속성에서 auto 속성을 주면 넘치는 컨텐츠는 잘리고 필요한 부분만 스크롤바가 생기게 됨 </p>
+    </div>
+    <div class="auto_img">
+        <h3>overflow : <br> auto</h3>
+        <img src="img/overflow.jpg">
+
+    </div>
+
+</body>
+
+</html>
